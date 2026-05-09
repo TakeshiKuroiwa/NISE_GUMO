@@ -1,0 +1,15 @@
+{
+  "rust-analyzer.checkOnSave.enable": false,
+  "rust-analyzer.procMacro.enable": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.preferences.noSemicolons": "off",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {},
+  "files.exclude": {
+    "**/target/**": true,
+    "**/node_modules/**": true,
+    "**/.git/**": true
+  },
+  "search.useIgnoreFiles": true,
+  "git.enabled": false
+}

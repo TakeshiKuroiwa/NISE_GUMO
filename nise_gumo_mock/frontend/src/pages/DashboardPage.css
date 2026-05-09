@@ -1,0 +1,308 @@
+.dashboard-page {
+  display: grid;
+  gap: 16px;
+}
+
+.workspace-topbar,
+.calendar-section,
+.day-panel,
+.gantt-section {
+  background: #ffffff;
+  border: 1px solid #dce2e8;
+  border-radius: 8px;
+}
+
+.workspace-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+}
+
+.workspace-topbar h1,
+.workspace-topbar p,
+.section-title h2,
+.day-panel h2,
+.day-panel h3 {
+  margin: 0;
+}
+
+.workspace-topbar h1 {
+  font-size: 24px;
+}
+
+.workspace-topbar p {
+  margin-top: 4px;
+  color: #667085;
+  font-size: 13px;
+}
+
+.notification-banner {
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  background: #f5f8ff;
+  border: 1px solid #c7d7fe;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.notification-banner span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-banner button,
+.calendar-header button,
+.section-title button,
+.quick-add button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #cfd6df;
+  background: #ffffff;
+  color: #243142;
+  border-radius: 6px;
+  min-height: 32px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.notification-banner button:hover,
+.calendar-header button:hover,
+.section-title button:hover,
+.quick-add button:hover {
+  background: #eef1f4;
+}
+
+.calendar-header button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 16px;
+}
+
+.calendar-section {
+  padding: 14px;
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.calendar-weekdays div {
+  padding: 8px;
+  color: #667085;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calendar-day {
+  aspect-ratio: 1.14;
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid #e6ebf0;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.calendar-day:hover,
+.calendar-day.selected {
+  border-color: #3b82f6;
+  background: #f5f9ff;
+}
+
+.calendar-day.empty {
+  background: #f3f5f7;
+  cursor: default;
+}
+
+.day-number {
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.task-chip,
+.schedule-chip {
+  display: block;
+  padding: 3px 5px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.task-chip {
+  background: #e7f6ec;
+  color: #067647;
+}
+
+.schedule-chip {
+  background: #fff1d6;
+  color: #93370d;
+}
+
+.day-panel {
+  padding: 16px;
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.day-panel h2 {
+  font-size: 18px;
+}
+
+.day-panel h3 {
+  margin-bottom: 10px;
+  color: #667085;
+  font-size: 13px;
+}
+
+.task-row,
+.schedule-row {
+  padding: 10px;
+  border: 1px solid #e6ebf0;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.quick-add {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 8px;
+}
+
+.quick-add input {
+  min-width: 0;
+  border: 1px solid #cfd6df;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+.empty-message {
+  color: #98a2b3;
+  font-size: 13px;
+}
+
+.gantt-section {
+  padding: 16px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.section-title h2 {
+  font-size: 17px;
+}
+
+.gantt-list {
+  display: grid;
+  gap: 10px;
+}
+
+.gantt-row {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.gantt-row strong,
+.gantt-row span {
+  display: block;
+}
+
+.gantt-row strong {
+  font-size: 13px;
+}
+
+.gantt-row > div:first-child span {
+  margin-top: 3px;
+  color: #667085;
+  font-size: 12px;
+}
+
+.gantt-track {
+  height: 30px;
+  position: relative;
+  background: #eef1f4;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gantt-track span {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  min-width: 42px;
+  padding: 2px 8px;
+  background: #2e90fa;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: right;
+}
+
+@media (max-width: 980px) {
+  .workspace-topbar,
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace-topbar {
+    display: grid;
+  }
+
+  .notification-banner {
+    max-width: none;
+  }
+
+  .gantt-row {
+    grid-template-columns: 1fr;
+  }
+}
