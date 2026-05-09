@@ -38,7 +38,7 @@
 
 ```bash
 # 1. リポジトリをフォーク & クローン
-git clone https://github.com/YOUR_USERNAME/repo.git
+git clone https://github.com/TakeshiKuroiwa/repo.git
 cd repo
 
 # 2. upstream を登録

@@ -36,5 +36,5 @@
 
 ---
 
-[Unreleased]: https://github.com/YOUR_USERNAME/NISE_GUMO/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/YOUR_USERNAME/NISE_GUMO/releases/tag/v0.1.0
+[Unreleased]: https://github.com/TakeshiKuroiwa/NISE_GUMO/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/TakeshiKuroiwa/NISE_GUMO/releases/tag/v0.1.0
