@@ -105,6 +105,7 @@ npm run backend
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── LICENSE
 ├── SECURITY.md
 ├── README.md
 └── package.json
