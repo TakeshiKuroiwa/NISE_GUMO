@@ -99,7 +99,6 @@ npm run backend
 │   ├── frontend/        # React + TypeScript モックUI
 │   └── backend/         # Rust + Axum モックAPI
 ├── backend/             # Rust + Axum バックエンド
-├── templates/           # GitHub公開用ドキュメントの元テンプレート
 ├── NISE_GUMO初期構想.md
 ├── 未決事項暫定案0509.md
 ├── CHANGELOG.md
