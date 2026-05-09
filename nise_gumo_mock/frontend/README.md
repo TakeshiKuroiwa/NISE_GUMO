@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+# NISE_GUMO モックフロントエンド
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> カレンダー、WBSガント、コードエディタを統合したプロジェクト進捗管理アプリケーションのモックアップ（フロントエンド部分）
 
-## Available Scripts
+![Status](https://img.shields.io/badge/status-mockup-blue)
+![Frontend](https://img.shields.io/badge/frontend-React%20%2B%20TypeScript-3178c6)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 概要
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+このプロジェクトは、NISE_GUMO アプリケーションのフロントエンドモックアップです。React と TypeScript を使用して構築されており、Monaco Editor を統合した VSCode ライクなコードエディタ、月次カレンダー、WBS ベースのプロジェクト管理機能を備えています。
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+バックエンドが未起動でも、ローカルのモックデータを使用して動作します。ロール別ログイン、プロジェクト管理、スケジュール確認、エディタ機能などをテストできます。
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 機能
 
-### `npm run build`
+- **ロール別ログイン**: エンジニア、プロジェクトリーダー、システム管理者のデモアカウント
+- **スケジュール画面**: 月次カレンダー、日別 WBS 表示、個人予定追加、通知バナー
+- **プロジェクト画面**: 参画中プロジェクト詳細、参画依頼、PL 向け操作（WBS・招待・離脱）
+- **コードエディタ**: Monaco Editor によるファイルツリー、テーマ変更、フォントサイズ調整
+- **管理画面**: ユーザー管理、権限譲渡、通知作成
+- **プロフィール/設定**: 表示名変更、アカウント削除依頼
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 技術スタック
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| カテゴリ | 使用技術 |
+|----------|----------|
+| フレームワーク | React, TypeScript |
+| ルーティング | React Router |
+| 状態管理 | Zustand |
+| UI/エディタ | Monaco Editor, lucide-react, Tailwind CSS |
+| ビルドツール | Create React App |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## クイックスタート
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 前提条件
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Node.js (バージョン 16 以上)
+- npm または yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### インストール
 
-## Learn More
+1. リポジトリをクローンまたはダウンロードします。
+2. プロジェクトディレクトリに移動します：
+   ```
+   cd nise_gumo_mock/frontend
+   ```
+3. 依存関係をインストールします：
+   ```
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 実行
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+開発サーバーを起動します：
+```
+npm start
+```
+
+ブラウザで [http://localhost:3000](http://localhost:3000) を開くと、アプリケーションが表示されます。編集すると自動でリロードされます。
+
+### テスト
+
+テストを実行します：
+```
+npm test
+```
+
+### ビルド
+
+本番用ビルドを作成します：
+```
+npm run build
+```
+
+`build` フォルダに最適化されたファイルが生成されます。
+
+### イジェクト（推奨しない）
+
+Create React App の設定をカスタマイズしたい場合：
+```
+npm run eject
+```
+
+**注意**: この操作は元に戻せません。
+
+---
+
+## バックエンドとの連携
+
+このフロントエンドはモックデータを使用しています。本番バックエンド（Rust + Axum）と連携するには、`src/services/api.ts` を修正してください。
+
+---
+
+## 貢献
+
+バグ報告や機能リクエストは、GitHub の Issue からお願いします。
+
+---
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下で公開されています。
