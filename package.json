@@ -1,0 +1,11 @@
+{
+  "name": "nise-gumo-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix nise_gumo_mock/frontend start",
+    "build": "npm --prefix nise_gumo_mock/frontend run build",
+    "frontend": "npm --prefix nise_gumo_mock/frontend start",
+    "backend": "cargo run --manifest-path nise_gumo_mock/backend/Cargo.toml"
+  }
+}
