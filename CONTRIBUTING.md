@@ -48,7 +48,7 @@ npm run backend
 
 | ブランチ名 | 用途 |
 |------------|------|
-| `main` | 安定版 |
+| `master` | 安定版 |
 | `feature/xxx` | 新機能・画面追加 |
 | `fix/xxx` | バグ修正 |
 | `docs/xxx` | ドキュメント更新 |

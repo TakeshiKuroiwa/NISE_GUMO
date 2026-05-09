@@ -98,9 +98,14 @@ npm run backend
 ├── nise_gumo_mock/
 │   ├── frontend/        # React + TypeScript モックUI
 │   └── backend/         # Rust + Axum モックAPI
+├── backend/             # Rust + Axum バックエンド
 ├── templates/           # GitHub公開用ドキュメントの元テンプレート
 ├── NISE_GUMO初期構想.md
 ├── 未決事項暫定案0509.md
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── SECURITY.md
 ├── README.md
 └── package.json
 ```
@@ -112,6 +117,7 @@ npm run backend
 - [初期構想](./NISE_GUMO初期構想.md)
 - [未決事項 暫定案](./未決事項暫定案0509.md)
 - [コントリビュートガイド](./CONTRIBUTING.md)
+- [行動規範](./CODE_OF_CONDUCT.md)
 - [セキュリティポリシー](./SECURITY.md)
 - [変更履歴](./CHANGELOG.md)
 
@@ -120,9 +126,3 @@ npm run backend
 ## コントリビュート
 
 Issue や Pull Request の作成前に [CONTRIBUTING.md](./CONTRIBUTING.md) を確認してください。
-
----
-
-## ライセンス
-
-ライセンスは未確定です。GitHubで公開する前に `LICENSE` の追加と、README内のライセンス表記を確定してください。
