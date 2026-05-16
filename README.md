@@ -98,12 +98,12 @@ npm run backend
 ├── nise_gumo_mock/
 │   ├── frontend/        # React + TypeScript モックUI
 │   └── backend/         # Rust + Axum モックAPI
-├── backend/             # Rust + Axum バックエンド
 ├── NISE_GUMO初期構想.md
 ├── 未決事項暫定案0509.md
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── AGENTS.md
 ├── LICENSE
 ├── SECURITY.md
 ├── README.md
@@ -118,6 +118,7 @@ npm run backend
 - [未決事項 暫定案](./未決事項暫定案0509.md)
 - [コントリビュートガイド](./CONTRIBUTING.md)
 - [行動規範](./CODE_OF_CONDUCT.md)
+- [AI開発向けAGENTS.mdテンプレート](./AGENTS.md)
 - [セキュリティポリシー](./SECURITY.md)
 - [変更履歴](./CHANGELOG.md)
 
@@ -126,3 +127,4 @@ npm run backend
 ## コントリビュート
 
 Issue や Pull Request の作成前に [CONTRIBUTING.md](./CONTRIBUTING.md) を確認してください。
+AIを活用して実装、レビュー、ドキュメント整備を行う場合は [AGENTS.md](./AGENTS.md) のテンプレートを参考に、役割、完了条件、禁止事項、参照情報を明確にしてください。
